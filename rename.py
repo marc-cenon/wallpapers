@@ -7,7 +7,7 @@ index=1
 def rename_file(files):
     for index, file in enumerate(files):
         print(file)
-        if file == "rename.py" or ".git":
+        if file in ['rename.py', '.git']:
             continue
         else:
             os.rename(file, 'wall_' + str(index)+ '.jpg')
