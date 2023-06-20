@@ -21,6 +21,8 @@ def get_newfile(files):
             list_new.append(file)
 
     print(list_new)
+    print("-------")
+    print(list_old)
     return list_new
 
 def write_newfile(files):
@@ -35,7 +37,7 @@ def write_newfile(files):
 def current_count():
     global current_index
     wall_list = []
-    for name in glob.glob('wall*'):
+    for name in glob.glob('wall_*'):
         short_name = int(name[5:-4])
         wall_list.append(short_name)
         wall_list.sort()
