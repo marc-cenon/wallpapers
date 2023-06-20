@@ -21,8 +21,6 @@ def get_newfile(files):
             list_new.append(file)
 
     print(list_new)
-    print("-------")
-    print(list_old)
     return list_new
 
 def write_newfile(files):
